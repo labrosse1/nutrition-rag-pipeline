@@ -15,4 +15,4 @@ results = pipeline.predict(
 
 
 for res in results:
-    res.save_to_json(f"ocr/runs/{day}_vl16/raw/")
+    res.save_to_json(f"private/runs/{day}_vl16/raw/")
