@@ -1,0 +1,21 @@
+[project]
+name = "rag-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic==0.117.0",
+    "chromadb>=1.5.9",
+    "git-filter-repo>=2.47.0",
+    "google-genai==2.3.0",
+    "llama-index>=0.14.24",
+    "llama-index-llms-google-genai>=0.10.0",
+    "llama-index-vector-stores-chroma>=0.5.5",
+    "nltk>=3.10.3",
+    "openai==2.46.0",
+    "paddleocr[doc-parser]>=3.7.0",
+    "paddlepaddle==3.2.1",
+    "python-dotenv>=1.2.3",
+    "scikit-learn>=1.9.0",
+]
