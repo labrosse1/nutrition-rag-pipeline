@@ -29,6 +29,10 @@ def book_chunks_file(book: str) -> pathlib.Path:
     return book_root(book) / "cleaned_data" / "chunks.json"
 
 
+def book_vector_store_dir(book: str) -> pathlib.Path:
+    return book_root(book) / "vector_store"
+
+
 def require_book_path(path: pathlib.Path, book: str) -> None:
     if not path.exists():
         raise FileNotFoundError(
