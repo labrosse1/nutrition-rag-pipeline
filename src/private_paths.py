@@ -25,6 +25,10 @@ def book_cleaned_file(book: str) -> pathlib.Path:
     return book_root(book) / "cleaned_data" / "filtered_blocks.json"
 
 
+def book_chunks_file(book: str) -> pathlib.Path:
+    return book_root(book) / "cleaned_data" / "chunks.json"
+
+
 def require_book_path(path: pathlib.Path, book: str) -> None:
     if not path.exists():
         raise FileNotFoundError(
